@@ -38,7 +38,7 @@ jobs:
           fetch-depth: 0
           token: ${{ steps.github-app.outputs.token }}
 
-      - uses: cloudposse-github-actions/readme@v0
+      - uses: itisopen-gh-actions/readme@v0.5.0
         with:
           token: ${{ steps.github-app.outputs.token }}
           readme_enabled: true

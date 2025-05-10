@@ -3,14 +3,14 @@
 {{- $deprecated := has (ds "config") "deprecated" }}
 {{- $is_terraform := (strings.Contains "terraform-" ((ds "config").github_repo))  -}}
 {{- $utm_link := printf "%%s?utm_source=%s&utm_medium=%s&utm_campaign=%s&utm_content=%s" "github" "readme" (ds "config").github_repo "%s" -}}
-{{- $banner := printf "https://github.com/%s/blob/main/.github/banner.png?raw=true" (ds "config").github_repo -}}
-{{- $homepage := printf $utm_link "https://cpco.io/homepage" "" -}}
-{{- $logo := "https://cloudposse.com/logo-300x69.svg" -}}
-{{- $terraform_modules := printf $utm_link "https://cpco.io/terraform-modules" "terraform_modules" -}}
-{{- $slack := printf $utm_link "https://cpco.io/slack" "slack" -}}
-{{- $commercial_support := printf $utm_link "https://cpco.io/commercial-support" "commercial_support" -}}
-{{- $office_hours := printf $utm_link "https://cloudposse.com/office-hours" "office_hours" -}}
-{{- $newsletter := printf $utm_link "https://cpco.io/newsletter" "newsletter" -}}
+{{- $banner := printf "https://github.com/%s/blob/itisopen/.github/banner.png?raw=true" (ds "config").github_repo -}}
+{{- $homepage := printf $utm_link "https://itisopen.net/homepage" "" -}}
+{{- $logo := "https://itisopen.net/logo-300x69.svg" -}}
+{{- $terraform_modules := printf $utm_link "https://github.com/itisopen-terraform-modules" "terraform_modules" -}}
+{{- $slack := printf $utm_link "https://itisopen.net/slack" "slack" -}}
+{{- $commercial_support := printf $utm_link "https://itisopen.net/commercial-support" "commercial_support" -}}
+{{- $office_hours := printf $utm_link "https://itisopen.net/office-hours" "office_hours" -}}
+{{- $newsletter := printf $utm_link "https://itisopen.net/newsletter" "newsletter" -}}
 {{- $cta := printf "<a href=\"%s\"><img alt=\"Request Quote\" src=\"https://img.shields.io/badge/request%%20quote-success.svg?style=for-the-badge\"/></a>" $commercial_support -}}
 {{- $context := dict "is_terraform" $is_terraform "utm_link" $utm_link "commercial_support" $commercial_support "cta" $cta -}}
 {{- $sections := slice "introduction" "quickstart" "examples" -}}
@@ -22,12 +22,12 @@
 {{- if .is_terraform }}
 > [!TIP]
 > #### 👽 Use Atmos with Terraform
-> Cloud Posse uses [`atmos`](https://atmos.tools) to easily orchestrate multiple environments using Terraform. <br/>
+> ITisOpen uses [`atmos`](https://atmos.tools) to easily orchestrate multiple environments using Terraform. <br/>
 > Works with [Github Actions](https://atmos.tools/integrations/github-actions/), [Atlantis](https://atmos.tools/integrations/atlantis), or [Spacelift](https://atmos.tools/integrations/spacelift).
 >
 > <details>
 > <summary><strong>Watch demo of using Atmos with Terraform</strong></summary>
-> <img src="https://github.com/cloudposse/atmos/blob/main/docs/demo.gif?raw=true"/><br/>
+> <img src="https://github.com/itisopen/atmos/blob/main/docs/demo.gif?raw=true"/><br/>
 > <i>Example of running <a href="https://atmos.tools"><code>atmos</code></a> to manage infrastructure from our <a href="https://atmos.tools/quick-start/">Quick Start</a> tutorial.</i>
 > </detalis>
 {{- end }}
@@ -35,24 +35,25 @@
 {{- define "tip_use_reference_architecture" -}}
 {{- if .is_terraform }}
 > [!TIP]
-> #### Use Terraform Reference Architectures for AWS
+> #### Use Terraform Reference Architectures for AWS, Azure, Oracle Cloud, GCP, Hetzner, and more!
 >
-> Use Cloud Posse's ready-to-go [terraform architecture blueprints](https://cloudposse.com/reference-architecture/) for AWS to get up and running quickly.
+> Use ITisOpen's ready-to-go [terraform architecture blueprints](https://github.com/itisopen-terraform-projects/) to get up and running quickly.
 >
 > ✅ We build it together with your team.<br/>
 > ✅ Your team owns everything.<br/>
-> ✅ 100% Open Source and backed by fanatical support.<br/>
+> ✅ 100% Open Source.<br/>
 >
 > {{ .cta }}
 > <details><summary>📚 <strong>Learn More</strong></summary>
 >
 > <br/>
 >
-> Cloud Posse is the leading [**DevOps Accelerator**]({{ .commercial_support }}) for funded startups and enterprises.
+> ITisOpen is a community backed project providing solutions for startups and enterprises.
+> We build on top of the excellent work of [ITisOpen](https://itisopen.net)'s open source tools such as [Atmos](https://atmos.tools) and their Terraform [modules](https://docs.itisopen.net/modules) and [components](https://docs.itisopen.net/components)  to help you get started quickly. ITisOpen is a leader in the open source community and has been building production-ready infrastructure for over 5 years. But they focus exclusively on AWS. In this community we extend their work and make it available for other cloud providers like Azure, Oracle Cloud, GCP, and Hetzner.
 >
 > *Your team can operate like a pro today.*
 >
-> Ensure that your team succeeds by using Cloud Posse's proven process and turnkey blueprints. Plus, we stick around until you succeed.
+> Ensure that your team succeeds by using ITisOpen's proven process and turnkey blueprints. Plus, we stick around until you succeed.
 > #### Day-0:  Your Foundation for Success
 > - **Reference Architecture.** You'll get everything you need from the ground up built using 100% infrastructure as code.
 > - **Deployment Strategy.** Adopt a proven deployment strategy with GitHub Actions, enabling automated, repeatable, and reliable software releases.
@@ -81,7 +82,7 @@
 # (deprecated) {{(ds "config").name}}
 {{- else }}
   {{- if (file.Exists ".github/banner.png") -}}
-    <a href="https://cpco.io/homepage"><img src="{{ $banner }}" alt="Project Banner"/></a><br/>
+    <a href="https://itisopen.net/homepage"><img src="{{ $banner }}" alt="Project Banner"/></a><br/>
     {{ if has (ds "config") "badges" }}<p align="right">{{- end -}}
   {{- else -}}
     # {{(ds "config").name}} <a href="{{ $homepage }}"><img align="right" src="{{ $logo }}" width="150" /></a>
@@ -103,7 +104,7 @@
 
   ** DO NOT EDIT THIS FILE
   **
-  ** This file was automatically generated by the `cloudposse/build-harness`.
+  ** This file was automatically generated by the `itisopen/build-harness`.
   ** 1) Make all changes to `README.yaml`
   ** 2) Run `make init` (you only need to do this once)
   ** 3) Run`make readme` to rebuild this file.
@@ -173,7 +174,7 @@ We literally have <a href="{{ $terraform_modules }}">*hundreds of other terrafor
 {{- if $is_terraform }}
 
 > [!IMPORTANT]
-> In Cloud Posse's examples, we avoid pinning modules to specific versions to prevent discrepancies between the documentation
+> In ITisOpen's examples, we avoid pinning modules to specific versions to prevent discrepancies between the documentation
 > and the latest released versions. However, for your own projects, we strongly advise pinning each module to the exact version
 > you're using. This practice ensures the stability of your infrastructure. Additionally, we recommend implementing a systematic
 > approach for updating versions to avoid unexpected changes.
@@ -230,7 +231,8 @@ This project is under active development, and we encourage contributions from ou
 
 {{ if has (datasource "config") "contributors" }}
 
-Many thanks to our outstanding contributors:
+Many thanks to the outstanding contributors to the Cloud Posse upstream contents. We appreciate your hard work and dedication to building scalable enterprise grade solutions.
+Many thanks also to the contributors to the ITisOpen upstream contents. We appreciate your hard work and dedication to extending the work of Cloud Posse to other cloud providers.
 
 <a href="https://github.com/{{ printf "%s" (ds "config").github_repo}}/graphs/contributors">
   <img src="https://contrib.rocks/image?repo={{ printf "%s" (ds "config").github_repo}}&max=24" />
@@ -240,7 +242,7 @@ Many thanks to our outstanding contributors:
 For 🐛 bug reports & feature requests, please use the [issue tracker]({{ printf "https://github.com/%s/issues" (ds "config").github_repo}}).
 
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
- 1. Review our [Code of Conduct]({{ printf "https://github.com/%s/?tab=coc-ov-file#code-of-conduct" (ds "config").github_repo}}) and [Contributor Guidelines](https://github.com/cloudposse/.github/blob/main/CONTRIBUTING.md).
+ 1. Review our [Code of Conduct]({{ printf "https://github.com/%s/?tab=coc-ov-file#code-of-conduct" (ds "config").github_repo}}) and [Contributor Guidelines](https://github.com/itisopen/.github/blob/main/CONTRIBUTING.md).
  2. **Fork** the repo on GitHub
  3. **Clone** the project to your own machine
  4. **Commit** changes to your own branch
@@ -251,17 +253,19 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 ### 🌎 Slack Community
 
-Join our [Open Source Community]({{ $slack }}) on Slack. It's **FREE** for everyone! Our "SweetOps" community is where you get to talk with others who share a similar vision for how to rollout and manage infrastructure. This is the best place to talk shop, ask questions, solicit feedback, and work together as a community to build totally *sweet* infrastructure.
+Join our [Open Source Community]({{ $slack }}) on Slack. It's **FREE** for everyone! Our "ITisOpen" community is where you get to talk with others who share a similar vision for how to rollout and manage infrastructure. This is the best place to talk shop, ask questions, solicit feedback, and work together as a community to build totally *open* infrastructure.
 
 ### 📰 Newsletter
 
-Sign up for [our newsletter]({{ $newsletter }}) and join 3,000+ DevOps engineers, CTOs, and founders who get insider access to the latest DevOps trends, so you can always stay in the know.
+Sign up for [our newsletter]({{ $newsletter }}) and join other DevOps & Platform Engineers, CTOs, and founders who get insider access to the latest DevOps & Platform Engineering trends, so you can always stay in the know.
 Dropped straight into your Inbox every week — and usually a 5-minute read.
 
-### 📆 Office Hours <a href="{{ $office_hours }}"><img src="https://img.cloudposse.com/fit-in/200x200/https://cloudposse.com/wp-content/uploads/2019/08/Powered-by-Zoom.png" align="right" /></a>
+<!--
+### 📆 Office Hours <a href="{{ $office_hours }}"><img src="https://img.itisopen.net/fit-in/200x200/https://itisopen.net/wp-content/uploads/2019/08/Powered-by-Zoom.png" align="right" /></a>
 
-[Join us every Wednesday via Zoom]({{ $office_hours }}) for your weekly dose of insider DevOps trends, AWS news and Terraform insights, all sourced from our SweetOps community, plus a _live Q&A_ that you can’t find anywhere else.
+[Join us every Wednesday via Zoom]({{ $office_hours }}) for your weekly dose of insider DevOps trends, AWS news and Terraform insights, all sourced from our ITisOpen community, plus a _live Q&A_ that you can’t find anywhere else.
 It's **FREE** for everyone!
+-->
 
 {{- end }}
 
@@ -397,13 +401,22 @@ All other trademarks referenced herein are the property of their respective owne
 ## Copyrights
 
 {{ range $copyright := (ds "config").copyrights -}}
-{{ printf "Copyright © %s-%d [%s](%s)\n" $copyright.year time.Now.Year $copyright.name $copyright.url }}
+{{- $nameLower := ($copyright.name | strings.ToLower) -}}
+{{- $suffix := "" -}}
+{{- if (or (strings.Contains $nameLower "cloud posse") (strings.Contains $nameLower "cloud posse, llc") (strings.Contains $nameLower "cloudposse")) -}}  {{- $suffix = ", all rights reserved for upstream content" -}}
+{{- else if (strings.Contains $nameLower "itisopen") -}}
+  {{- $suffix = ", all rights reserved for repository-specific content" -}}
+{{- else -}}
+  {{- $suffix = ", !!! FIXME IN README.md.gotmpl !!!" -}}
+{{- end -}}
+{{ printf "Copyright © %s-%d [%s](%s)%s" $copyright.year time.Now.Year $copyright.name $copyright.url $suffix }}
+{{- "\n" -}}
 {{- end }}
 {{ else }}
 ---
-Copyright © 2017-{{ time.Now.Year }} [Cloud Posse, LLC](https://cpco.io/copyright)
+Copyright © 2017-{{ time.Now.Year }} [Cloud Posse, LLC](https://cpco.io/copyright), all rights reserved for upstream content.
+Copyright © 2025-{{ time.Now.Year }} [ITisOpen](https://itisopen.net/copyright), all rights reserved for repository's specific content
 {{ end }}
+<a href="{{ printf $utm_link "https://itisopen.net/readme/footer/link" "readme_footer_link" }}"><img alt="README footer" src="https://itisopen.net/readme/footer/img"/></a>
 
-<a href="{{ printf $utm_link "https://cloudposse.com/readme/footer/link" "readme_footer_link" }}"><img alt="README footer" src="https://cloudposse.com/readme/footer/img"/></a>
-
-<img alt="Beacon" width="0" src="{{ printf "https://ga-beacon.cloudposse.com/UA-76589703-4/%s?pixel&cs=github&cm=readme&an=%s" (ds "config").github_repo (filepath.Base ((ds "config").github_repo)) }}"/>
+<img alt="Beacon" width="0" src="{{ printf "https://ga-beacon.itisopen.net/UA-76589703-4/%s?pixel&cs=github&cm=readme&an=%s" (ds "config").github_repo (filepath.Base ((ds "config").github_repo)) }}"/>

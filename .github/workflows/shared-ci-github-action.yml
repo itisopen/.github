@@ -36,8 +36,10 @@ jobs:
   context:
     runs-on: ${{ fromJSON(inputs.runs-on) }}
     steps:
-      - name: Checkout main
+      - name: Checkout itisopen
         uses: actions/checkout@v4
+        with:
+          ref: itisopen
 
       - name: Workflows
         id: workflows

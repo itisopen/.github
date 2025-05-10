@@ -15,25 +15,28 @@ copyrights:
   - name: "Cloud Posse, LLC"
     url: "https://cloudposse.com"
     year: "2022"
+  - name: "ITisOpen"
+    url: "https://itisopen.net"
+    year: "2025"
 
 # Canonical GitHub repo
-github_repo: cloudposse/.github
+github_repo: itisopen/.github
 
 # Badges to display
 badges:
   - name: "Last Update"
-    image: https://img.shields.io/github/last-commit/cloudposse/.github/main?style=for-the-badge
-    url: https://github.com/cloudposse/.github/commits/main/
+    image: https://img.shields.io/github/last-commit/itisopen/.github/main?style=for-the-badge
+    url: https://github.com/itisopen/.github/commits/main/
   - name: "Slack Community"
-    image: "https://slack.cloudposse.com/for-the-badge.svg"
-    url: "https://cloudposse.com/slack"
+    image: "https://slack.itisopen.net/for-the-badge.svg"
+    url: "https://itisopen.net/slack"
 
 # Short description of this project
 description: |-
-  This repository fulfills several unique functions functions for the Cloud Posse GitHub Organization.
+  This repository fulfills several unique functions functions for the ITisOpen GitHub Organization.
 
   1. It can contain special org-level files that provide functionality for our organization on GitHub. These files include:
-      - **[`profile/README.md`](profile/README.md)** - the profile README for the Cloud Posse GitHub organization
+      - **[`profile/README.md`](profile/README.md)** - the profile README for the ITisOpen GitHub organization
       - **[`CONTRIBUTING.md`](CONTRIBUTING.md)** - how to get started contributing to our projects
       - **[`SECURITY.md`](SECURITY.md)** - our security policy and how to report vulnerabilities
       - **[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)** - our code of conduct covering our community and projects
