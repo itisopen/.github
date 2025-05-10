@@ -2,12 +2,12 @@ name: Branch
 on:
   pull_request:
     branches:
-      - main
+      - itisopen
       - release/**
     types: [opened, synchronize, reopened]
   push:
     branches:
-      - main
+      - itisopen
       - release/v*
     paths-ignore:
       - '.github/**'
@@ -22,5 +22,5 @@ permissions:
 
 jobs:
   github-action:
-    uses: cloudposse/.github/.github/workflows/shared-github-action.yml@main
+    uses: itisopen/.github/.github/workflows/shared-github-action.yml@itisopen
     secrets: inherit

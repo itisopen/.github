@@ -23,7 +23,7 @@ jobs:
     if: ${{ github.event.issue.pull_request &&
             contains(github.event.comment.body, '/terratest') &&
             github.event.issue.state == 'open' }}
-    uses: cloudposse/.github/.github/workflows/shared-access-controller.yml@main
+    uses: itisopen/.github/.github/workflows/shared-access-controller.yml@itisopen
     with:
       runs-on: ${{ inputs.runs-on }}
       permission: run_terratest
@@ -35,7 +35,7 @@ jobs:
     if: ${{ needs.access.outputs.granted == 'true' }}
     runs-on: ${{ fromJSON(inputs.runs-on) }}
     steps:
-      - uses: cloudposse-github-actions/get-pr@v2
+      - uses: itisopen-gh-actions/get-pr@v2
         id: pr
         with:
           id: ${{ github.event.issue.number }}
@@ -95,7 +95,7 @@ jobs:
     runs-on: ${{ fromJSON(inputs.runs-on) }}    
     steps:
       - name: "Update GitHub Status for pending"
-        uses: docker://cloudposse/github-status-updater
+        uses: docker://itisopen/github-status-updater
         with:
           args: >-
             -action update_state
@@ -110,7 +110,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
 
   terratest:
-    container: cloudposse/test-harness:latest
+    container: itisopen/test-harness:latest
     runs-on: ${{ fromJSON(inputs.runs-on) }}
     environment: terratest
     needs: [context, pending]
@@ -132,7 +132,7 @@ jobs:
           ref: ${{ needs.context.outputs.head_sha }}
 
       - name: "Update GitHub Status for pending"
-        uses: docker://cloudposse/github-status-updater
+        uses: docker://itisopen/github-status-updater
         with:
           args: >-
             -action update_state
@@ -324,7 +324,7 @@ jobs:
 
       - name: "Update GitHub Status for failure"
         if: ${{ failure() }}
-        uses: docker://cloudposse/github-status-updater
+        uses: docker://itisopen/github-status-updater
         with:
           args: >-
             -action update_state
@@ -339,7 +339,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
 
       - name: "Update GitHub Status for this success"
-        uses: docker://cloudposse/github-status-updater
+        uses: docker://itisopen/github-status-updater
         with:
           args: >-
             -action update_state
@@ -355,7 +355,7 @@ jobs:
 
       - name: "Update GitHub Status for cancelled"
         if: ${{ cancelled() }}
-        uses: docker://cloudposse/github-status-updater
+        uses: docker://itisopen/github-status-updater
         with:
           args: >-
             -action update_state
@@ -391,7 +391,7 @@ jobs:
           fi
 
       - name: "Update GitHub Status for pending"
-        uses: docker://cloudposse/github-status-updater
+        uses: docker://itisopen/github-status-updater
         with:
           args: >-
             -action update_state

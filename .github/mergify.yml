@@ -3,7 +3,7 @@ shared:
   # Automated pull requests from bot users
   is_a_bot: &is_a_bot
     - or:
-        - "author=cloudpossebot"
+        - "author=itisopenbot"
         - "author=github-actions[bot]"
         - "author=dependabot[bot]"
         - "author=renovate[bot]"
@@ -11,7 +11,7 @@ shared:
   # Not a bot user
   not_a_bot: &not_a_bot
     - and:
-        - "-author=cloudpossebot"
+        - "-author=itisopenbot"
         - "-author=github-actions[bot]"
         - "-author=dependabot[bot]"
         - "-author=renovate[bot]"
@@ -134,11 +134,11 @@ shared:
             - files=README.md
             - files=README.yaml
 
-  # Needs Cloud Posse review
-  needs_cloudposse: &needs_cloudposse
+  # Needs ITisOpen review
+  needs_itisopen: &needs_itisopen
     - or:
         - "files~=(mergify|settings|dependabot|renovate|CODEOWNERS|\\.github|Makefile|Dockerfile)"
-        - "label~=(cloudposse)"
+        - "label~=(itisopen)"
 
   # Has no changes
   has_no_changes: &has_no_changes
@@ -425,11 +425,11 @@ pull_request_rules:
 
           A maintainer will review your changes shortly. Please don't be discouraged if it takes a while.
 
-          While you wait, make sure to review our [contributor guidelines](https://github.com/cloudposse/.github/blob/main/CONTRIBUTING.md).
+          While you wait, make sure to review our [contributor guidelines](https://github.com/itisopen/.github/blob/main/CONTRIBUTING.md).
 
           > [!TIP]
           > #### Need help or want to ask for a PR review to be expedited?
-          > Join us on [Slack](https://cloudposse.com/slack) in the `#pr-reviews` channel.
+          > Join us on [Slack](https://itisopen.net/slack) in the `#pr-reviews` channel.
 
   - name: add triage label for new pull requests
     conditions:
@@ -476,21 +476,21 @@ pull_request_rules:
         toggle:
           - wip
 
-  - name: add "needs-cloudposse" label when restrictions apply to this PR
+  - name: add "needs-itisopen" label when restrictions apply to this PR
     conditions:
       - and: *is_open
-      - and: *needs_cloudposse
+      - and: *needs_itisopen
     actions:
       label:
         toggle:
-          - needs-cloudposse
+          - needs-itisopen
       comment:
         message: |
           > [!IMPORTANT]
-          > #### Cloud Posse Engineering Team Review Required
-          > This pull request modifies files that require Cloud Posse's review. Please be patient, and a core maintainer will review your changes.
+          > #### ITisOpen Engineering Team Review Required
+          > This pull request modifies files that require ITisOpen's review. Please be patient, and a core maintainer will review your changes.
           >
-          > To expedite this process, reach out to us on [Slack](https://cloudposse.com/slack) in the `#pr-reviews` channel.
+          > To expedite this process, reach out to us on [Slack](https://itisopen.net/slack) in the `#pr-reviews` channel.
 
   - name: rebase pull request when it's more than 10 commits behind main
     conditions:
@@ -514,7 +514,7 @@ pull_request_rules:
       - and:
           - "base=main" # or whichever branch the freeze applies to
           - "created-at > 2024-11-12" # Start date of the code freeze
-          - "repository-full-name=cloudposse/terraform-aws-components" # Apply only to cloudposse/terraform-aws-components
+          - "repository-full-name=itisopen/terraform-aws-components" # Apply only to itisopen/terraform-aws-components
           - "label != force" # Skip PR auto close
     actions:
       close:
@@ -522,10 +522,10 @@ pull_request_rules:
           > [!WARNING]
           > #### Components have moved!
           > **Repository is now read-only**
-          > We have migrated every component in this repository to individual repositories under a [new GitHub organization](https://github.com/cloudposse-terraform-components).
+          > We have migrated every component in this repository to individual repositories under a [new GitHub organization](https://github.com/itisopen-terraform-components).
           > All future updates, contributions, and issues should be directed to the respective component repositories in the new organization.
           >
-          > [Learn more](https://github.com/cloudposse/terraform-aws-components/issues/1177) about the migration.
+          > [Learn more](https://github.com/itisopen/terraform-aws-components/issues/1177) about the migration.
 
   #- name: mergeable
   #  conditions:

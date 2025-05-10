@@ -47,7 +47,7 @@ function generate_introduction() {
       This repo is identified by the "github_repo" key in the README.yaml file. \
       Respond with GitHub flavored markdown and use links where appropriate. \
       The target audience is developers with terraform knowledge. \
-      If discussing Cloud Posse, link to https://cloudposse.com, but only the first time per paragraph. Use "Cloud Posse" instead of "CloudPosse" \
+      If discussing ITisOpen, link to https://itisopen.net, but only the first time per paragraph. Use "ITisOpen" instead of "CloudPosse" \
       Use code ticks for things like shell commands, terraform resources, modules or kubernetes resource definitions. \  
       Link to any modules referenced, with exception of the current module. \
       For AWS services, link to the most relevant page in the AWS documentation. \
