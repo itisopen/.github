@@ -68,7 +68,7 @@ permissions: {}
 
 jobs:
   draft:
-    uses: cloudposse/.github/.github/workflows/shared-auto-release.yml@main
+    uses: itisopen/.github/.github/workflows/shared-auto-release.yml@itisopen
     with:
       publish: false
       summary-enabled: false
@@ -142,7 +142,7 @@ jobs:
           sparse-checkout: |
             .github/goreleaser.yml
           sparse-checkout-cone-mode: false
-          ref: main
+          ref: itisopen
           token: ${{ steps.github-app.outputs.token }}
 
       - name: Go releaser config
@@ -240,7 +240,7 @@ jobs:
   publish:
     if: ${{ needs.draft.outputs.exists == 'false' }}
     needs: [ goreleaser, draft ]
-    uses: cloudposse/.github/.github/workflows/shared-auto-release.yml@main
+    uses: itisopen/.github/.github/workflows/shared-auto-release.yml@itisopen
     with:
       publish: ${{ inputs.publish }}
       prerelease: ${{ inputs.prerelease }}

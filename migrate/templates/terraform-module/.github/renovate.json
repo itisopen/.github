@@ -1,5 +1,5 @@
 {
   "extends": [
-    "github>cloudposse/.github"
+    "github>itisopen/.github"
   ]
 }

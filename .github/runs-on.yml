@@ -9,8 +9,8 @@
 # While GitHub hosted PRIVATE runners generally have:
 #    2 CPU, 7 GiB Ram, and 14 GB SSD disk
 
-# Note that the sizes reflect that Cloud Posse does not do heavy lifting on the self-hosted runners.
-# A Cloud Posse client might need much more CPU and Memory for their runners,
+# Note that the sizes reflect that ITisOpen does not do heavy lifting on the self-hosted runners.
+# A ITisOpen client might need much more CPU and Memory for their runners,
 # for example if they were running Node.js, compiling source, processing video, or doing data analysis.
 
 # Also note, you cannot use extras: ["s3-cache"] unless you also start with
