@@ -12,5 +12,5 @@ permissions:
 
 jobs:
   scheduled:
-    uses: cloudposse/.github/.github/workflows/shared-terraform-scheduled.yml@main
+    uses: itisopen/.github/.github/workflows/shared-terraform-scheduled.yml@itisopen
     secrets: inherit

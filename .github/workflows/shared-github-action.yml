@@ -39,7 +39,7 @@ concurrency:
 
 jobs:
   ci-readme:
-    uses: cloudposse/.github/.github/workflows/shared-readme.yml@main
+    uses: itisopen/.github/.github/workflows/shared-readme.yml@itisopen
     name: "Readme"
     if: ${{ github.event_name == 'push' }}
     with:
@@ -47,7 +47,7 @@ jobs:
     secrets: inherit
 
   ci-gha:
-    uses: cloudposse/.github/.github/workflows/shared-ci-github-action.yml@main
+    uses: itisopen/.github/.github/workflows/shared-ci-github-action.yml@itisopen
     name: "CI"
     with:
       organization: ${{ inputs.organization }}
@@ -68,7 +68,7 @@ jobs:
     needs: [ ci ]
     name: "Release"
     if: ${{ github.event_name == 'push' }}
-    uses: cloudposse/.github/.github/workflows/shared-auto-release.yml@main
+    uses: itisopen/.github/.github/workflows/shared-auto-release.yml@itisopen
     with:
       publish: ${{ inputs.publish }}
     secrets: inherit
