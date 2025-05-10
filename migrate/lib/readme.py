@@ -69,7 +69,7 @@ def migrate_readme(readme_yaml="README.yaml"):
         new_badges = [
             {"name": "Latest Release", "image": f"https://img.shields.io/github/release/{github_repo}.svg?style=for-the-badge", "url": f"https://github.com/{github_repo}/releases/latest"},
             {"name": "Last Updated", "image": f"https://img.shields.io/github/last-commit/{github_repo}.svg?style=for-the-badge", "url": f"https://github.com/{github_repo}/commits"},
-            {"name": "Slack Community", "image": "https://slack.cloudposse.com/for-the-badge.svg", "url": "https://cloudposse.com/slack"}
+            {"name": "Slack Community", "image": "https://slack.itisopen.net/for-the-badge.svg", "url": "https://itisopen.net/slack"}
         ]
 
         # Add badges for specific workflow files if they exist
