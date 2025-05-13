@@ -1,13 +1,13 @@
 # Code of Conduct
 
-This code of conduct governs the [SweetOps Slack Community](https://cloudposse.com/slack) and related [Open Source Projects](https://github.com/cloudposse). SweetOps is operated by Cloud Posse, a [DevOps Accelerator](https://devopsaccelerator.com/) based in Houston, TX.
+This code of conduct governs the [ITisOpen Slack Community](https://itisopen.net/slack) and related [Open Source Projects](https://github.com/cloudposse). 
 
 > [!IMPORTANT]
-> **SweetOps is a collaborative DevOps community for engineers of all skill levels.**
+> **ITisOpen is a collaborative DevOps and Platform community for engineers of all skill levels.**
 >
 > We want to make sure our community is as constructive as possible in order to help each other solve cool DevOps problems.
 > Anything that goes against the spirit of this, isn’t cool. If you see something suspicious, derogatory, or
-> otherwise inappropriate, etc. please send an email to [abuse@cloudposse.com](mailto:abuse@cloudposse.com) with details.
+> otherwise inappropriate, etc. please send an email to [abuse@itisopen.net](mailto:abuse@itisopen.net) with details.
 >
 
 ## Introduction
@@ -16,7 +16,7 @@ We strive to be inclusive to the largest number of contributors, with as diverse
 
 This code of conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.
 
-We invite all those who participate in SweetOps to help us create safe and positive experiences for everyone.
+We invite all those who participate in ITisOpen to help us create safe and positive experiences for everyone.
 
 ## Etiquette
 - Do not cross-post questions across multiple channels (pick one)
@@ -52,22 +52,16 @@ The following are behaviors we consider forms of harassment that are unacceptabl
 
 This is not an exhaustive list of things we prohibit. In order to preserve the spirit of this community, we reserve the right to use our discretion when applying disciplinary actions to behaviors we deem inappropriate.
 
-## Solicitation
-
-We only permit companies or individuals to solicit work, post jobs, or engage in self-promotion in the [#jobs](http://archive.sweetops.com/jobs/) channel [(archive)](http://archive.sweetops.com/jobs/). It is not acceptable to engage in this behavior in any other channel or to send unsolicited direct messages concerning job opportunities or job marketplaces. Under no circumstances is it acceptable to solicit payment from members for any reason (e.g. recruiting fees). The intent for the [#jobs](http://archive.sweetops.com/jobs/) channel [(archive)](http://archive.sweetops.com/jobs/) is for companies looking to make a direct-hire without intermediaries such as recruiters. Additionally, the promotion of any kind of third-party job marketplaces is not permitted. Any direct messages to members should be in relation to specific messages posted about job opportunities or candidates seeking work, but absolutely not for promoting other services. Recruiters may only reach out to individual candidates who have posted in the `#jobs` channel, but are not permitted to directly solicit members or companies in this community.
-
-> [!IMPORTANT]
-> If you’ve received an unwelcome solicitation, please email [abuse@cloudposse.com](mailto:abuse@cloudposse.com) with details including screenshots.
 
 ## Privacy
 
-All conversations that happen in our public Slack channels are published regularly to our [online archive](https://archive.sweetops.com/) and indexed by web crawlers like Google. For this reason, community members should not have any expectation of privacy in their use.
+All conversations that happen in our public Slack channels are published regularly to our [online archive](https://archive.itisopen.net/) and indexed by web crawlers like Google. For this reason, community members should not have any expectation of privacy in their use.
 
 It’s the responsibility of our members to avoid sharing any information that might lead to loss or damages, such as breach of their company’s security protocols or sharing of intellectual property.
 
 All direct messages are private. They not accessible by anyone on the Slack team, including moderators and administrators.
 
-Your email address is private and will not be shared with anyone outside of Cloud Posse. From time to time, Slack (the Company) or Cloud Posse may send you notifications. If you are unable to opt-out for any reason, please let us know at [abuse@cloudposse.com](mailto:abuse@cloudposse.com).
+Your email address is private and will not be shared with anyone outside of Cloud Posse. From time to time, Slack (the Company) or Cloud Posse may send you notifications. If you are unable to opt-out for any reason, please let us know at [abuse@itisopen.net](mailto:abuse@itisopen.net).
 
 Additionally, Slack (the Company) has its own [Privacy Policy](https://slack.com/privacy-policy) which affects all communities hosted on the platform.
 
@@ -76,7 +70,7 @@ Additionally, Slack (the Company) has its own [Privacy Policy](https://slack.co
 > [!IMPORTANT]
 > **Please be mindful that anything you say in our community is a matter of public record**.
 
-We publish all conversations in public channels to our [public archive](https://archive.sweetops.com/). We cannot prevent people from taking screenshots or otherwise logging conversations in this slack team.
+We publish all conversations in public channels to our [public archive](https://archive.itisopen.net/). We cannot prevent people from taking screenshots or otherwise logging conversations in this slack team.
 
 We also can’t guarantee that every member’s login credentials and logged-in devices are secure and not compromised.
 
@@ -86,13 +80,13 @@ Please exercise caution and refrain from sharing sensitive information that coul
 
 ## Message Retention
 
-Because this is a free slack team, online scrollback is restricted, but Slack (the company) retains a complete log of all channels and direct messages back to the inception of the SweetOps Slack team.
+Because this is a free slack team, online scrollback is restricted, but Slack (the company) retains a complete log of all channels and direct messages back to the inception of the ITisOpen Slack team.
 
 Slack is a U.S. company and therefore subject to subpoenas from U.S. courts. Our logs may be subject to subpoena and could become public as part of legal proceedings.
 
 ## Reporting Guidelines
 
-Please let us know if you encounter any unacceptable behavior by sending us an email at [abuse@cloudposse.com](mailto:abuse@cloudposse.com). We would appreciate it if you would include any screenshots that provide a full context of whatever transpired. We might not be able to see what you see, especially if what was sent was in a private direct message.
+Please let us know if you encounter any unacceptable behavior by sending us an email at [abuse@itisopen.net](mailto:abuse@itisopen.net). We would appreciate it if you would include any screenshots that provide a full context of whatever transpired. We might not be able to see what you see, especially if what was sent was in a private direct message.
 
 ## Moderation
 
@@ -109,17 +103,17 @@ Official moderators of our Slack community are:
 
 Any unacceptable behavior will not be tolerated.
 
-If you are the subject of or witness to any violations of this Code of Conduct, please email us at [abuse@cloudposse.com](mailto:abuse@cloudposse.com).
+If you are the subject of or witness to any violations of this Code of Conduct, please email us at [abuse@itisopen.net](mailto:abuse@itisopen.net).
 
 If violations occur, our community moderators will take necessary and appropriate actions, up to and including expulsion from the community.
 
 ## Membership
 
-Our community is public and free-for-everyone to join. In fact, we encourage you to share our community with everyone you know that might benefit. Our goal is to facilitate collaboration across organizational boundaries so we can achieve SweetOps.
+Our community is public and free-for-everyone to join. In fact, we encourage you to share our community with everyone you know that might benefit. Our goal is to facilitate collaboration across organizational boundaries so we can achieve ITisOpen.
 
 If you would like to invite someone to the team, they may join here:
 
-[https://cloudposse.com/slack](https://cloudposse.com/slack)
+[https://itisopen.net/slack](https://itisopen.net/slack)
 
 ## Open Source Collaboration
 
@@ -127,7 +121,7 @@ One of the big goals of our community is to increase the amount of Open Source c
 
 ## “Office Hours” Support
 
-Every week we hold public [community “office hours”](https://cloudposse.com/office-hours) which are an opportunity for members to get to know each other face-to-face, ask questions, and get help. These sessions abide by this Code of Conduct.
+Every week we hold public [community “office hours”](https://itisopen.net/office-hours) which are an opportunity for members to get to know each other face-to-face, ask questions, and get help. These sessions abide by this Code of Conduct.
 
 These sessions may be recorded, published and shared.
 
@@ -144,7 +138,5 @@ We want to hear from you. Please let us know if there’s something we should ad
 
 | Contact Method      | Details                                                     |
 | ------------------- | ----------------------------------------------------------- |
-| **Email**           | [community@cloudposse.com](mailto:community@cloudposse.com) |
-| **Phone**           | [+1 800-358-9018](tel:+18003589018)                         |
-| **Mailing Address** | 440 N Barranca Ave #1430, Covina, CA 91723                  |
+| **Email**           | [community@itisopen.net](mailto:community@itisopen.net) |
 
