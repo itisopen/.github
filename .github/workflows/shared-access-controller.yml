@@ -34,7 +34,7 @@ jobs:
     steps:
       - name: Controller
         id: controller
-        uses: itisopen/github-action-yaml-config-query@v1
+        uses: itisopen/github-action-yaml-config-query@1.0.0
         with:
           query: .${{ inputs.permission }}
           config: |-
