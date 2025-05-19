@@ -2,10 +2,10 @@
 
 ## Reporting a Vulnerability
 
-The Cloud Posse team takes the security of our software seriously. If you believe you have found a security vulnerability in any repository owned by Cloud Posse, we encourage you to let us know straight away. We will investigate all legitimate reports and do our best to quickly fix the problem.
+The ITisOpen team takes the security of our software seriously. If you believe you have found a security vulnerability in any repository owned by ITisOpen, we encourage you to let us know straight away. We will investigate all legitimate reports and do our best to quickly fix the problem.
 
 > [!IMPORTANT]
-> Please report any security vulnerabilities by sending an email to [security@cloudposse.com](mailto:security@cloudposse.com).
+> Please report any security vulnerabilities by sending an email to [security@itisopen.net](mailto:security@itisopen.net).
 
 ### What to Include in Your Report
 
@@ -20,7 +20,7 @@ To help us better understand the nature and scope of the issue, please include a
 > [!NOTE]
 > **Bug Bounties**
 > 
-> Cloud Posse **does not** provide bug bounties for vulnerability disclosures.
+> ITisOpen **does not** provide bug bounties for vulnerability disclosures.
 >
 > As an open-source company, we release our projects for free under a permissive license, encouraging community contributions.
 > We value all contributions equally and therefore don’t compensate specific ones, including those by security researchers.
@@ -42,5 +42,5 @@ We deeply value the contributions and efforts of security researchers and the wi
 
 We are committed to working with the community in a transparent and collaborative manner. We recognize the efforts of those who responsibly disclose vulnerabilities and will ensure they receive acknowledgment for their contributions in our project documentation or other public communications, as appropriate.
 
-Thank you for your support in keeping Cloud Posse and the open source ecosystem secure!
+Thank you for your support in keeping ITisOpen and the open source ecosystem secure!
 

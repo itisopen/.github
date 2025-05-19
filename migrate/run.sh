@@ -52,7 +52,10 @@ git config --local core.excludesFile ${MIGRATE_PATH}/.gitignore
 
 # Clone the `build-harness` to a centralized location so we don't have to do it for every migration
 if [ ! -d "${MIGRATE_PATH}/tmp/build-harness" ]; then
-    git clone https://github.com/cloudposse/build-harness.git "$(dirname ${curdir})/build-harness"
+    git clone https://github.com/itisopen/build-harness.git "$(dirname ${curdir})/build-harness"
+		cd "$(dirname ${curdir})/build-harness"
+		git checkout -b itisopen origin/itisopen
+		cd -
 fi
 
 # Load all the helper functions

@@ -7,6 +7,6 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: cloudposse/github-action-validate-codeowners@main
+    - uses: itisopen/github-action-validate-codeowners@itisopen
       with:
         token: ${{ secrets.PUBLIC_REPO_ACCESS_TOKEN }}

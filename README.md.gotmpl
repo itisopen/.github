@@ -27,7 +27,7 @@
 >
 > <details>
 > <summary><strong>Watch demo of using Atmos with Terraform</strong></summary>
-> <img src="https://github.com/cloudposse/atmos/blob/main/docs/demo.gif?raw=true"/><br/>
+> <img src="https://github.com/itisopen/atmos/blob/main/docs/demo.gif?raw=true"/><br/>
 > <i>Example of running <a href="https://atmos.tools"><code>atmos</code></a> to manage infrastructure from our <a href="https://atmos.tools/quick-start/">Quick Start</a> tutorial.</i>
 > </detalis>
 {{- end }}
@@ -49,7 +49,7 @@
 > <br/>
 >
 > ITisOpen is a community backed project providing solutions for startups and enterprises.
-> We build on top of the excellent work of [Cloud Posse](https://cloudposse.com)'s open source tools such as [Atmos](https://atmos.tools) and their Terraform [modules](https://docs.cloudposse.com/modules) and [components](https://docs.cloudposse.com/components)  to help you get started quickly. Cloud Posse is a leader in the open source community and has been building production-ready infrastructure for over 5 years. But they focus exclusively on AWS. In this community we extend their work and make it available for other cloud providers like Azure, Oracle Cloud, GCP, and Hetzner.
+> We build on top of the excellent work of [ITisOpen](https://itisopen.net)'s open source tools such as [Atmos](https://atmos.tools) and their Terraform [modules](https://docs.itisopen.net/modules) and [components](https://docs.itisopen.net/components)  to help you get started quickly. ITisOpen is a leader in the open source community and has been building production-ready infrastructure for over 5 years. But they focus exclusively on AWS. In this community we extend their work and make it available for other cloud providers like Azure, Oracle Cloud, GCP, and Hetzner.
 >
 > *Your team can operate like a pro today.*
 >
@@ -174,7 +174,7 @@ We literally have <a href="{{ $terraform_modules }}">*hundreds of other terrafor
 {{- if $is_terraform }}
 
 > [!IMPORTANT]
-> In Cloud Posse's examples, we avoid pinning modules to specific versions to prevent discrepancies between the documentation
+> In ITisOpen's examples, we avoid pinning modules to specific versions to prevent discrepancies between the documentation
 > and the latest released versions. However, for your own projects, we strongly advise pinning each module to the exact version
 > you're using. This practice ensures the stability of your infrastructure. Additionally, we recommend implementing a systematic
 > approach for updating versions to avoid unexpected changes.
@@ -231,7 +231,7 @@ This project is under active development, and we encourage contributions from ou
 
 {{ if has (datasource "config") "contributors" }}
 
-Many thanks to the outstanding contributors to the Cloud Posse contents. We appreciate your hard work and dedication to building scalable enterprise grade solutions.
+Many thanks to the outstanding contributors to the ITisOpen contents. We appreciate your hard work and dedication to building scalable enterprise grade solutions.
 
 <a href="https://github.com/{{ printf "%s" (ds "config").github_repo}}/graphs/contributors">
   <img src="https://contrib.rocks/image?repo={{ printf "%s" (ds "config").github_repo}}&max=24" />
@@ -262,7 +262,7 @@ Dropped straight into your Inbox every week — and usually a 5-minute read.
 <!--
 ### 📆 Office Hours <a href="{{ $office_hours }}"><img src="https://img.itisopen.net/fit-in/200x200/https://itisopen.net/wp-content/uploads/2019/08/Powered-by-Zoom.png" align="right" /></a>
 
-[Join us every Wednesday via Zoom]({{ $office_hours }}) for your weekly dose of insider DevOps trends, AWS news and Terraform insights, all sourced from our SweetOps community, plus a _live Q&A_ that you can’t find anywhere else.
+[Join us every Wednesday via Zoom]({{ $office_hours }}) for your weekly dose of insider DevOps trends, AWS news and Terraform insights, all sourced from our ITisOpen community, plus a _live Q&A_ that you can’t find anywhere else.
 It's **FREE** for everyone!
 -->
 
@@ -404,7 +404,7 @@ All other trademarks referenced herein are the property of their respective owne
 {{- end }}
 {{ else }}
 ---
-Copyright © 2025-{{ time.Now.Year }} [ITisOpen](https://itisopen.net/copyright) for materials and content on this github organization, and [Cloud Posse, LLC](https://cpco.io/copyright) for all their unmodified materials and content. All rights reserved.
+Copyright © 2025-{{ time.Now.Year }} [ITisOpen](https://itisopen.net/copyright) for materials and content on this github organization, and [ITisOpen](https://itisopen.net/copyright) for all their unmodified materials and content. All rights reserved.
 {{ end }}
 
 <a href="{{ printf $utm_link "https://itisopen.net/readme/footer/link" "readme_footer_link" }}"><img alt="README footer" src="https://itisopen.net/readme/footer/img"/></a>

@@ -16,15 +16,15 @@
 > ✅ Backed by our community support<br/>
 > ✅ So good, you will want to contribute!<br/>
 >
-> Just browsing? Kickstart your journey with [Atmos](https://atmos.tools), dive into discussions on [Slack](https://itisopen.net/slack). Discover how ITisOpen's open-source solutions, based on [Cloud Posse](https://github.com/cloudposse)'s enterprise-grade contents can elevate your organization.
+> Just browsing? Kickstart your journey with [Atmos](https://atmos.tools), dive into discussions on [Slack](https://itisopen.net/slack). Discover how ITisOpen's open-source solutions, based on [ITisOpen](https://github.com/itisopen)'s enterprise-grade contents can elevate your organization.
 >
 <!--
 > <details>
->   <summary><strong>💡 Learn More about Cloud Posse</strong></summary>
+>   <summary><strong>💡 Learn More about ITisOpen</strong></summary>
 >
 > ### Our Approach
 >
-> *After you work with Cloud Posse, your team will know what they're doing.*
+> *After you work with ITisOpen, your team will know what they're doing.*
 >
 > You will have a plan in place to handle deploying every new service your company builds. You will have peace of mind knowing that everything is defined with infrastructure as code and confident in your ability to deliver. Your team will have learned to fish and become autonomous. And guess what? We are here to pull you out if you ever get stuck in the mud.
 >
@@ -65,27 +65,27 @@
 [![Beacon][beacon]][website]
 
   [logo]: https://itisopen.net/logo-300x69.svg
-  [docs]: https://cpco.io/docs?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=docs
-  [website]: https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=website
-  [github]: https://cpco.io/github?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=github
-  [jobs]: https://cpco.io/jobs?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=jobs
-  [hire]: https://cpco.io/hire?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=hire
-  [slack]: https://cpco.io/slack?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=slack
-  [linkedin]: https://cpco.io/linkedin?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=linkedin
-  [twitter]: https://cpco.io/twitter?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=twitter
-  [testimonial]: https://cpco.io/leave-testimonial?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=testimonial
-  [office_hours]: https://itisopen.net/office-hours?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=office_hours
-  [newsletter]: https://cpco.io/newsletter?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=newsletter
-  [discourse]: https://ask.sweetops.com/?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=discourse
-  [email]: https://cpco.io/email?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=email
-  [commercial_support]: https://cpco.io/commercial-support?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=commercial_support
-  [we_love_open_source]: https://cpco.io/we-love-open-source?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=we_love_open_source
-  [terraform_modules]: https://cpco.io/terraform-modules?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=terraform_modules
+  [docs]: https://cpco.io/docs?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=docs
+  [website]: https://itisopen.net?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=website
+  [github]: https://cpco.io/github?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=github
+  [jobs]: https://cpco.io/jobs?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=jobs
+  [hire]: https://cpco.io/hire?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=hire
+  [slack]: https://itisopen.net/slack?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=slack
+  [linkedin]: https://cpco.io/linkedin?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=linkedin
+  [twitter]: https://cpco.io/twitter?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=twitter
+  [testimonial]: https://cpco.io/leave-testimonial?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=testimonial
+  [office_hours]: https://itisopen.net/office-hours?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=office_hours
+  [newsletter]: https://itisopen.net/newsletter?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=newsletter
+  [discourse]: https://ask.sweetops.com/?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=discourse
+  [email]: https://cpco.io/email?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=email
+  [commercial_support]: https://cpco.io/commercial-support?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=commercial_support
+  [we_love_open_source]: https://cpco.io/we-love-open-source?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=we_love_open_source
+  [terraform_modules]: https://cpco.io/terraform-modules?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=terraform_modules
   [readme_header_img]: https://itisopen.net/readme/header/img
-  [readme_header_link]: https://itisopen.net/readme/header/link?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=readme_header_link
+  [readme_header_link]: https://itisopen.net/readme/header/link?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=readme_header_link
   [readme_footer_img]: https://itisopen.net/readme/footer/img
-  [readme_footer_link]: https://itisopen.net/readme/footer/link?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=readme_footer_link
+  [readme_footer_link]: https://itisopen.net/readme/footer/link?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=readme_footer_link
   [readme_commercial_support_img]: https://itisopen.net/readme/commercial-support/img
-  [readme_commercial_support_link]: https://itisopen.net/readme/commercial-support/link?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/.github&utm_content=readme_commercial_support_link
-  [beacon]: https://ga-beacon.itisopen.net/UA-76589703-4/cloudposse/.github?pixel&cs=github&cm=readme&an=.github
+  [readme_commercial_support_link]: https://itisopen.net/readme/commercial-support/link?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=readme_commercial_support_link
+  [beacon]: https://ga-beacon.itisopen.net/UA-76589703-4/itisopen/.github?pixel&cs=github&cm=readme&an=.github
  -->

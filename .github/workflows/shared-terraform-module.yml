@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   ci-terraform:
-    uses: cloudposse/github-actions-workflows/.github/workflows/ci-terraform.yml@main
+    uses: itisopen/github-actions-workflows/.github/workflows/ci-terraform.yml@itisopen
     name: "CI"
     with:
       # Workaround for https://github.com/community/community/discussions/9099
@@ -24,7 +24,7 @@ jobs:
       runs-on: ${{ inputs.runs-on }}
 
   ci-readme:
-    uses: cloudposse/github-actions-workflows/.github/workflows/ci-readme.yml@main
+    uses: itisopen/github-actions-workflows/.github/workflows/ci-readme.yml@itisopen
     name: "Readme"
     if: ${{ github.event_name == 'push' }}
     with:
@@ -32,7 +32,7 @@ jobs:
     secrets: inherit
 
   ci-codeowners:
-    uses: cloudposse/github-actions-workflows/.github/workflows/ci-codeowners.yml@main
+    uses: itisopen/github-actions-workflows/.github/workflows/ci-codeowners.yml@itisopen
     name: "CI"
     with:
       is_fork: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}
@@ -43,7 +43,7 @@ jobs:
     runs-on: ${{ fromJSON(inputs.runs-on) }}
     name: "CI / Labels Validate"
     steps:
-      - uses: cloudposse/github-action-release-label-validator@v1
+      - uses: itisopen/github-action-release-label-validator@v1
 
   ci:
     runs-on: ${{ fromJSON(inputs.runs-on) }}
@@ -57,7 +57,7 @@ jobs:
   auto-release:
     name: "Release"
     needs: [ci]
-    uses: cloudposse/.github/.github/workflows/shared-auto-release.yml@main
+    uses: itisopen/.github/.github/workflows/shared-auto-release.yml@itisopen
     if: ${{ github.event_name == 'push' }}
     with:
       runs-on: ${{ inputs.runs-on }}

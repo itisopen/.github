@@ -24,7 +24,7 @@ function install_github_settings() {
     yq -ei ".repository.name = \"$XARGS_REPO_NAME\"" $settings
     yq -ei ".repository.description = \"$repo_description\"" $settings
     if [ -z "$repo_homepage" ]; then
-        yq -ei ".repository.homepage = \"https://cloudposse.com/accelerate\"" $settings
+        yq -ei ".repository.homepage = \"https://itisopen.net/accelerate\"" $settings
     else
         yq -ei ".repository.homepage = \"$repo_homepage\"" $settings
     fi

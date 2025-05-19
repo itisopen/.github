@@ -1,6 +1,6 @@
 # Code of Conduct
 
-This code of conduct governs the [ITisOpen Slack Community](https://itisopen.net/slack) and related [Open Source Projects](https://github.com/cloudposse). 
+This code of conduct governs the [ITisOpen Slack Community](https://itisopen.net/slack) and related [Open Source Projects](https://github.com/itisopen). 
 
 > [!IMPORTANT]
 > **ITisOpen is a collaborative DevOps and Platform community for engineers of all skill levels.**
@@ -61,7 +61,7 @@ It’s the responsibility of our members to avoid sharing any information that m
 
 All direct messages are private. They not accessible by anyone on the Slack team, including moderators and administrators.
 
-Your email address is private and will not be shared with anyone outside of Cloud Posse. From time to time, Slack (the Company) or Cloud Posse may send you notifications. If you are unable to opt-out for any reason, please let us know at [abuse@itisopen.net](mailto:abuse@itisopen.net).
+Your email address is private and will not be shared with anyone outside of ITisOpen. From time to time, Slack (the Company) or ITisOpen may send you notifications. If you are unable to opt-out for any reason, please let us know at [abuse@itisopen.net](mailto:abuse@itisopen.net).
 
 Additionally, Slack (the Company) has its own [Privacy Policy](https://slack.com/privacy-policy) which affects all communities hosted on the platform.
 
@@ -95,8 +95,7 @@ We perform both automated and human moderation. To some degree, we expect our co
 Moderators reserve the right to delete excessive self-promotional or commercial posts. Similarly, any objectionable, inappropriate or off-topic comments may be deleted. Members posting this content will receive a warning and risk being blocked from the team if the unacceptable behavior persists.
 
 Official moderators of our Slack community are:
-- Erik Osterman ([@osterman](https://github.com/osterman))
-- Andriy Knysh ([@aknysh](https://github.com/aknysh))
+- Patrice LACHANCE ([@patlachance](https://github.com/patlachance))
 
 
 ## Enforcement & Consequences
@@ -129,7 +128,7 @@ These sessions may be recorded, published and shared.
 
 We support a lot of Open Source projects. These projects abide by this Code of Conduct.
 
-- [https://github.com/cloudposse](https://github.com/cloudposse)
+- [https://github.com/itisopen](https://github.com/itisopen)
 
 
 ## Contact

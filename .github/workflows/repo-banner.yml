@@ -30,7 +30,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: '${{ steps.metadata.outputs.owner_login }}/.github'
-        ref: 'main'
+        ref: 'itisopen'
         path: 'github'
 
     - name: Symlink ${{github.workspace}} to `github/`
@@ -102,7 +102,7 @@ jobs:
 
     - name: Generate banner image
       id: screenshot
-      uses: cloudposse-github-actions/screenshot@main
+      uses: itisopen-gh-actions/screenshot@itisopen
       with:
         url: "file://${{github.workspace}}/github/banner/index.html"
         output: "${{ steps.meta.outputs.output }}"

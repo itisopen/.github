@@ -1,16 +1,16 @@
 # Contributing
 
-First off, thank you for considering contributing to Cloud Posse! It's people like you that make our community great.
+First off, thank you for considering contributing to ITisOpen! It's people like you that make our community great.
 
 ## Code of Conduct
 
-Cloud Posse has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text](CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+ITisOpen has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text](CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
 
 ## What Should I Know Before I Get Started?
 
-### Cloud Posse Projects
+### ITisOpen Projects
 
-Each Cloud Posse project is hosted in its own repository on GitHub. Before contributing, familiarize yourself with the specific project you are interested in. Each repository typically contains a [`README.md`](README.md) with an overview of the project, and instructions for setting up your development environment and running tests.
+Each ITisOpen project is hosted in its own repository on GitHub. Before contributing, familiarize yourself with the specific project you are interested in. Each repository typically contains a [`README.md`](README.md) with an overview of the project, and instructions for setting up your development environment and running tests.
 
 ## How Can I Contribute?
 
@@ -22,11 +22,11 @@ Before creating bug reports, please check the Github Issues as you might find ou
 
 ### Suggesting Enhancements
 
-This section guides you through submitting an enhancement suggestion for Cloud Posse, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
+This section guides you through submitting an enhancement suggestion for ITisOpen, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
 
 ### Your First Code Contribution
 
-Unsure where to begin contributing to Cloud Posse? You can start by looking through issues with the following labels:
+Unsure where to begin contributing to ITisOpen? You can start by looking through issues with the following labels:
 
 | Label                                                                                 | Usage                                                                    |
 | :------------------------------------------------------------------------------------ | :----------------------------------------------------------------------- |
@@ -37,10 +37,10 @@ Unsure where to begin contributing to Cloud Posse? You can start by looking thro
 
 The process described here has several goals:
 
-- Maintain Cloud Posse's quality
+- Maintain ITisOpen's quality
 - Fix problems that are important to users
-- Engage the community in working toward the best possible Cloud Posse
-- Enable a sustainable system for Cloud Posse's maintainers to review contributions
+- Engage the community in working toward the best possible ITisOpen
+- Enable a sustainable system for ITisOpen's maintainers to review contributions
 
 Please follow these steps to have your contribution considered by the maintainers:
 
@@ -66,7 +66,7 @@ As a reference, the following is a mapping between labels and [semver](https://s
 
 Typically when a module is pre-release, e.g. 0.x.x, each new feature will be a minor release. Once the module hits 1.x, simpler features, which fit the definition of patch, will be labelled as such.
 
-Only Cloud Posse engineers should move a module from v0 to v1, and usually we prefer that it not be a breaking change. In fact, it's not uncommon for v1 to be just a new label for the current release, prompted by the desire to release a v2 that has a breaking change.
+Only ITisOpen engineers should move a module from v0 to v1, and usually we prefer that it not be a breaking change. In fact, it's not uncommon for v1 to be just a new label for the current release, prompted by the desire to release a v2 that has a breaking change.
 
 ## Styleguides
 
@@ -82,7 +82,7 @@ Only Cloud Posse engineers should move a module from v0 to v1, and usually we pr
 
 ### Terraform Styleguide & Best Practices
 
-All Terraform should adhere to our [Terraform Best Practices](https://docs.cloudposse.com/reference/best-practices/terraform-best-practices/).
+All Terraform should adhere to our [Terraform Best Practices](https://docs.itisopen.net/reference/best-practices/terraform-best-practices/).
 
 ## Terraform Module Contributions
 
@@ -119,13 +119,13 @@ To avoid introducing breaking changes, here is a suggested approach for deprecat
 
 #### Examples:
 
-- [terraform-aws-s3-bucket / variables-deprecated.tf](https://github.com/cloudposse/terraform-aws-s3-bucket/blob/main/variables-deprecated.tf)
+- [terraform-aws-s3-bucket / variables-deprecated.tf](https://github.com/itisopen/terraform-aws-s3-bucket/blob/main/variables-deprecated.tf)
 
 ### Optional Input Variables
 
 Terraform does not easily allow conditional creation of resources based on input values.
 
-To avoid errors like `The "count" value depends on resource attributes that cannot be determined until apply time, so Terraform cannot predict how many instances will be created. To work around this, use the -target argument to first apply only the resources that the count depends on.` Cloud Posse has [standardised](https://github.com/cloudposse/terraform-aws-security-group/wiki/Naming-Conventions,-Deprecating-Inputs,-Optional-Inputs#optional-inputs) on using lists where inputs may be empty, and they determine the existence of another resource.
+To avoid errors like `The "count" value depends on resource attributes that cannot be determined until apply time, so Terraform cannot predict how many instances will be created. To work around this, use the -target argument to first apply only the resources that the count depends on.` ITisOpen has [standardised](https://github.com/itisopen/terraform-aws-security-group/wiki/Naming-Conventions,-Deprecating-Inputs,-Optional-Inputs#optional-inputs) on using lists where inputs may be empty, and they determine the existence of another resource.
 
 This is because we are then able to use the length of the list as the conditional subject, rather than the value itself.
 
@@ -134,7 +134,7 @@ Add a validation condition to prohibit more than 1 element in the list.
 
 #### Examples:
 
-- [terraform-aws-security-group / variables.tf](https://github.com/cloudposse/terraform-aws-security-group/blob/main/variables.tf)
+- [terraform-aws-security-group / variables.tf](https://github.com/itisopen/terraform-aws-security-group/blob/main/variables.tf)
   ```hcl
     variable "target_security_group_id" {
             type        = list(string)
@@ -163,7 +163,7 @@ Tests can also be run locally using the methods below.
 
 #### Local Testing
 
-Using [Leapp](https://docs.cloudposse.com/howto/geodesic/authenticate-with-leapp/), [aws-vault](https://docs.cloudposse.com/howto/geodesic/authenticate-with-aws-vault/) or or some other method, populate the following AWS credential environment variables for a suitable account:
+Using [Leapp](https://docs.itisopen.net/howto/geodesic/authenticate-with-leapp/), [aws-vault](https://docs.itisopen.net/howto/geodesic/authenticate-with-aws-vault/) or or some other method, populate the following AWS credential environment variables for a suitable account:
 
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
@@ -187,7 +187,7 @@ and regularly running a tool such as [aws-nuke](https://github.com/rebuy-de/aws-
 If running on an architecture other than amd64, specify the architecture in the docker pull command, e.g.
 
 ```shell
-docker pull --platform linux/amd64 cloudposse/test-harness:latest 
+docker pull --platform linux/amd64 itisopen/test-harness:latest 
 ```
 
 ```shell
@@ -216,7 +216,7 @@ Currently PR approval for Terraform modules is subject to the following checks. 
 3. Check for CODEOWNERS approval requirement
 4. Labels validated
 
-The full workflow can be seen [here](https://github.com/cloudposse/github-actions-workflows-terraform-module/blob/main/.github/workflows/feature-branch.yml).
+The full workflow can be seen [here](https://github.com/itisopen/github-actions-workflows-terraform-module/blob/main/.github/workflows/feature-branch.yml).
 
 In addition, maintainers will manually run Terratest tests against the PR branch to ensure the
 changes can be applied successfully, using the fixtures from `examples/complete/`.
