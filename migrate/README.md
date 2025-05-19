@@ -51,3 +51,4 @@ We encountered significant obstacles using `git-xargs`. Here they are for poster
 - `git-xargs` cannot auto-merge, so use `gh-cli` in script to commit, push, open PR, then merge
 - Using `gh-cli` to bypass the `git-xargs` deficiencies, means rate limiting isn't respected by `git-xargs`
 </details>
+
