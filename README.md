@@ -142,6 +142,7 @@ All other trademarks referenced herein are the property of their respective owne
 ## Copyrights
 
 Copyright © 2022-2025 [Cloud Posse, LLC](https://cloudposse.com), all rights reserved for upstream content
+
 Copyright © 2025-2025 [ITisOpen](https://itisopen.net), all rights reserved for repository-specific content
 
 
