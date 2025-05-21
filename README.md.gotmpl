@@ -401,7 +401,16 @@ All other trademarks referenced herein are the property of their respective owne
 ## Copyrights
 
 {{ range $copyright := (ds "config").copyrights -}}
-{{ printf "Copyright © %s-%d [%s](%s)\n" $copyright.year time.Now.Year $copyright.name $copyright.url }}
+{{- $nameLower := ($copyright.name | strings.ToLower) -}}
+{{- $suffix := "" -}}
+{{- if (strings.Contains $nameLower "cloud posse") -}}
+  {{- $suffix = ", all rights reserved for upstream content" -}}
+{{- else if (strings.Contains $nameLower "itisopen") -}}
+  {{- $suffix = ", all rights reserved for repository's specific content" -}}
+{{- else -}}
+  {{- $suffix = ", !!! FIXME IN README.md.gotmpl !!!" -}}
+{{- end -}}
+{{ printf "Copyright © %s-%d [%s](%s)%s\n" $copyright.year time.Now.Year $copyright.name $copyright.url $suffix }}
 {{- end }}
 {{ else }}
 ---
