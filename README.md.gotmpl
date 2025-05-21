@@ -13,7 +13,7 @@
 {{- $newsletter := printf $utm_link "https://itisopen.net/newsletter" "newsletter" -}}
 {{- $cta := printf "<a href=\"%s\"><img alt=\"Request Quote\" src=\"https://img.shields.io/badge/request%%20quote-success.svg?style=for-the-badge\"/></a>" $commercial_support -}}
 {{- $context := dict "is_terraform" $is_terraform "utm_link" $utm_link "commercial_support" $commercial_support "cta" $cta -}}
-{{- $sections := slice "introduction" "quickstart" "examples" -}}
+{{- $sections := list "introduction" "quickstart" "examples" -}}
 {{- define "nonEmptySections" -}}
 {{- range . -}}{{ $sectionContent := index (ds "config") . -}}{{ if and $sectionContent (gt (len $sectionContent) 2048) -}}{{ . }} {{ end -}}{{ end -}}
 {{- end -}}
@@ -403,6 +403,7 @@ All other trademarks referenced herein are the property of their respective owne
 {{ range $copyright := (ds "config").copyrights -}}
 {{- $nameLower := ($copyright.name | strings.ToLower) -}}
 {{- $suffix := "" -}}
+{{- printf "DEBUG: $nameLower is '%s'\n" $nameLower -}} {{- /* --- DEBUG LINE --- */}}
 {{- if (strings.Contains $nameLower "cloud posse") -}}
   {{- $suffix = ", all rights reserved for upstream content" -}}
 {{- else if (strings.Contains $nameLower "itisopen") -}}
@@ -410,14 +411,14 @@ All other trademarks referenced herein are the property of their respective owne
 {{- else -}}
   {{- $suffix = ", !!! FIXME IN README.md.gotmpl !!!" -}}
 {{- end -}}
-{{ printf "Copyright © %s-%d [%s](%s)%s\n" $copyright.year time.Now.Year $copyright.name $copyright.url $suffix }}
+{{ printf "Copyright © %s-%d [%s](%s)%s" $copyright.year time.Now.Year $copyright.name $copyright.url $suffix }}
+{{- "\n" -}}
 {{- end }}
 {{ else }}
 ---
 Copyright © 2017-{{ time.Now.Year }} [Cloud Posse, LLC](https://cpco.io/copyright), all rights reserved for upstream content.
 Copyright © 2025-{{ time.Now.Year }} [ITisOpen](https://itisopen.net/copyright), all rights reserved for repository's specific content
 {{ end }}
-
 <a href="{{ printf $utm_link "https://itisopen.net/readme/footer/link" "readme_footer_link" }}"><img alt="README footer" src="https://itisopen.net/readme/footer/img"/></a>
 
 <img alt="Beacon" width="0" src="{{ printf "https://ga-beacon.itisopen.net/UA-76589703-4/%s?pixel&cs=github&cm=readme&an=%s" (ds "config").github_repo (filepath.Base ((ds "config").github_repo)) }}"/>
