@@ -3,7 +3,7 @@
 <!-- markdownlint-disable -->
 <a href="https://itisopen.net/homepage"><img src="https://github.com/itisopen/.github/blob/itisopen/.github/banner.png?raw=true" alt="Project Banner"/></a><br/>
     <p align="right">
-<a href="https://github.com/itisopen/.github/commits/main/"><img src="https://img.shields.io/github/last-commit/itisopen/.github/main?style=for-the-badge" alt="Last Update"/></a><a href="https://itisopen.net/slack"><img src="https://img.shields.io/endpoint?url=https://www.itisopen.net/api/slack/members/count&style=for-the-badge" alt="Slack Community"/></a></p>
+<a href="https://github.com/itisopen/.github/commits/main/"><img src="https://img.shields.io/github/last-commit/itisopen/.github/main?style=for-the-badge" alt="Last Update"/></a><a href="https://itisopen.net/slack"><img src="https://slack.itisopen.net/for-the-badge.svg" alt="Slack Community"/></a></p>
 <!-- markdownlint-restore -->
 
 <!--
