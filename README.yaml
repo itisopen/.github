@@ -28,7 +28,7 @@ badges:
     image: https://img.shields.io/github/last-commit/itisopen/.github/main?style=for-the-badge
     url: https://github.com/itisopen/.github/commits/main/
   - name: "Slack Community"
-    image: "https://slack.itisopen.net/for-the-badge.svg"
+    image: "https://img.shields.io/endpoint?url=https://www.itisopen.net/api/slack/members/count"
     url: "https://itisopen.net/slack"
 
 # Short description of this project

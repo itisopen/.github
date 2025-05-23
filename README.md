@@ -3,7 +3,7 @@
 <!-- markdownlint-disable -->
 <a href="https://itisopen.net/homepage"><img src="https://github.com/itisopen/.github/blob/itisopen/.github/banner.png?raw=true" alt="Project Banner"/></a><br/>
     <p align="right">
-<a href="https://github.com/itisopen/.github/commits/main/"><img src="https://img.shields.io/github/last-commit/itisopen/.github/main?style=for-the-badge" alt="Last Update"/></a><a href="https://itisopen.net/slack"><img src="https://slack.itisopen.net/for-the-badge.svg" alt="Slack Community"/></a></p>
+<a href="https://github.com/itisopen/.github/commits/main/"><img src="https://img.shields.io/github/last-commit/itisopen/.github/main?style=for-the-badge" alt="Last Update"/></a><a href="https://itisopen.net/slack"><img src="https://img.shields.io/endpoint?url=https://www.itisopen.net/api/slack/members/count" alt="Slack Community"/></a></p>
 <!-- markdownlint-restore -->
 
 <!--
@@ -141,8 +141,8 @@ All other trademarks referenced herein are the property of their respective owne
 
 ## Copyrights
 
-Copyright © 2022-2025 [Cloud Posse, LLC](https://cloudposse.com), all rights reserved for upstream content
-Copyright © 2025-2025 [ITisOpen](https://itisopen.net), all rights reserved for repository-specific content
+- Copyright © 2022-2025 [Cloud Posse, LLC](https://cloudposse.com), all rights reserved for upstream content
+- Copyright © 2025-2025 [ITisOpen](https://itisopen.net), all rights reserved for repository-specific content
 
 
 <a href="https://itisopen.net/readme/footer/link?utm_source=github&utm_medium=readme&utm_campaign=itisopen/.github&utm_content=readme_footer_link"><img alt="README footer" src="https://itisopen.net/readme/footer/img"/></a>
