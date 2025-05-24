@@ -3,22 +3,27 @@
 #
 # Order is important: the last matching pattern has the highest precedence
 
-# These owners will be the default owners for everything
-*             @itisopen/engineering @itisopen/contributors
+# To allow mergify to auto-merge, we must in general not assign code owners to files
+# This is because mergify will not be able to merge if the code owner is not a mergify admin.
+# Instead, we require mergify checks to pass before merging and re-implement CODEOWNERS 
+# functionality in the mergify configuration.
 
-# ITisOpen must review any changes to Makefiles
-**/Makefile   @itisopen/engineering
-**/Makefile.* @itisopen/engineering
-
-# ITisOpen must review any changes to GitHub actions
-.github/*     @itisopen/engineering
-
-# ITisOpen must review any changes to standard context definition,
-# but some changes can be rubber-stamped.
-**/*.tf       @itisopen/engineering @itisopen/contributors @itisopen/approvers
-README.yaml   @itisopen/engineering @itisopen/contributors @itisopen/approvers
-README.md     @itisopen/engineering @itisopen/contributors @itisopen/approvers
-docs/*.md     @itisopen/engineering @itisopen/contributors @itisopen/approvers
+## These owners will be the default owners for everything
+#*             @itisopen/engineering @itisopen/contributors
+#
+## ITisOpen must review any changes to Makefiles
+#**/Makefile   @itisopen/engineering
+#**/Makefile.* @itisopen/engineering
+#
+## ITisOpen must review any changes to GitHub actions
+#.github/*     @itisopen/engineering
+#
+## ITisOpen must review any changes to standard context definition,
+## but some changes can be rubber-stamped.
+#**/*.tf       @itisopen/engineering @itisopen/contributors @itisopen/approvers
+#README.yaml   @itisopen/engineering @itisopen/contributors @itisopen/approvers
+#README.md     @itisopen/engineering @itisopen/contributors @itisopen/approvers
+#docs/*.md     @itisopen/engineering @itisopen/contributors @itisopen/approvers
 
 # ITisOpen Admins must review all changes to CODEOWNERS or the mergify configuration
 .github/mergify.yml @itisopen/admins
